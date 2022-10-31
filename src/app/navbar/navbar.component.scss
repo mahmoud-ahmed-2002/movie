@@ -1,0 +1,50 @@
+.navbar {
+    .navbar-brand {
+        img {
+            width: 40%;
+        }
+    }
+    .collapse {
+        .navbar-nav {
+            .nav-item {
+                
+                .nav-link {
+                    padding: 0;
+                    font-size: 16px;
+                    position: relative;
+                    margin: auto 1rem;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        background: #DA4453;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        transform: scaleX(0);
+                        transition: all .2s;
+                        transform-origin: left;
+                    }
+                    &:hover {
+                        color: #DA4453;
+                        &::after {
+                           transform: scaleX(1);
+                        }
+                    }
+                }
+                .active {
+                    color: #DA4453;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        background: #DA4453;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

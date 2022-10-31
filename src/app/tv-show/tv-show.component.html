@@ -1,0 +1,15 @@
+<div class=" container">
+    <div class=" row ">
+        <div class=" col-md-3" *ngFor="let tvshow of tvshowData">
+            <div class=" item-tvshow">
+                <div class="image-moive">
+                    <img [src]="imgPath+tvshow.poster_path" class="w-100" alt="">
+                </div>
+                <div class="caption-movie">
+                    <h3>{{tvshow.original_name}}</h3>
+                    <p>{{tvshow.overview}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

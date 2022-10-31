@@ -1,0 +1,15 @@
+<div class=" container">
+    <div class=" row">
+        <div class=" col-md-3" *ngFor="let movie of moviesData">
+            <div class=" item-movie" >
+                <div class="image-moive">
+                    <img [src]="imgPath+movie.poster_path" class="w-100" alt="">
+                </div>
+                <div class="caption-movie">
+                    <h3>{{movie.title}}</h3>
+                    <p>{{movie.overview}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
