@@ -9,6 +9,8 @@ import { MoviesComponent } from './movies/movies.component';
 import { TvShowComponent } from './tv-show/tv-show.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SearchComponent } from './search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MoviesComponent,
     TvShowComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

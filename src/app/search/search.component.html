@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="catagories-search">
+      <div class="row">
+        <div class="col-12">
+          <div class="mt-5">
+            <input class="form-control" type="text" value="" placeholder="Search" (keyup)="getValue($event)"/>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class=" row">
+    <div class=" col-md-3" *ngFor="let search of searchData">
+        <div class=" item-movie mt-5" >
+            <div class="image-moive">
+                <img [src]="imgPath+search.poster_path" class="w-100" alt="">
+            </div>
+            <div class="caption-movie">
+                <h3>{{search.title}}</h3>
+                <p>{{search.overview}}</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
